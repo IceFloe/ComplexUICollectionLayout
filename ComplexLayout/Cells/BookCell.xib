@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookCell" customModule="ComplexLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMX-7z-Wjz">
+                        <rect key="frame" x="8" y="8" width="154" height="284"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kaI-KN-p7O">
+                                <rect key="frame" x="0.0" y="0.0" width="154" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="hKk-cU-deH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vug-Wd-hCC">
+                                <rect key="frame" x="4" y="128" width="146" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBw-yk-rBa">
+                                <rect key="frame" x="8" y="156.5" width="29" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRf-uI-azy">
+                                <rect key="frame" x="123" y="156.5" width="23" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LF5-by-pyQ">
+                                <rect key="frame" x="8" y="179.5" width="39" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="286" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRL-fc-jOb">
+                                <rect key="frame" x="123" y="179.5" width="23" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3i-wI-m29">
+                                <rect key="frame" x="8" y="206.5" width="138" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U7i-t1-Xta">
+                                <rect key="frame" x="134" y="0.5" width="20" height="19.5"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2VV-DC-C1b"/>
+                                    <constraint firstAttribute="height" constant="20" id="gn6-Iu-BNd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="N3i-wI-m29" secondAttribute="bottom" constant="8" id="0Hs-e9-l3C"/>
+                            <constraint firstAttribute="trailing" secondItem="zRf-uI-azy" secondAttribute="trailing" constant="8" id="7Na-2O-GRG"/>
+                            <constraint firstAttribute="trailing" secondItem="Vug-Wd-hCC" secondAttribute="trailing" constant="4" id="Bmi-la-u16"/>
+                            <constraint firstItem="U7i-t1-Xta" firstAttribute="top" secondItem="KMX-7z-Wjz" secondAttribute="top" id="CGS-HU-4LA"/>
+                            <constraint firstAttribute="trailing" secondItem="N3i-wI-m29" secondAttribute="trailing" constant="8" id="Ggi-HC-5ZC"/>
+                            <constraint firstAttribute="trailing" secondItem="U7i-t1-Xta" secondAttribute="trailing" id="LhP-JQ-VpY"/>
+                            <constraint firstItem="N3i-wI-m29" firstAttribute="leading" secondItem="KMX-7z-Wjz" secondAttribute="leading" constant="8" id="NcX-Ep-SCx"/>
+                            <constraint firstItem="Vug-Wd-hCC" firstAttribute="top" secondItem="kaI-KN-p7O" secondAttribute="bottom" constant="8" id="SDH-m1-O2A"/>
+                            <constraint firstItem="kaI-KN-p7O" firstAttribute="leading" secondItem="KMX-7z-Wjz" secondAttribute="leading" id="U37-En-k63"/>
+                            <constraint firstItem="N3i-wI-m29" firstAttribute="top" secondItem="LF5-by-pyQ" secondAttribute="bottom" constant="12" id="YnP-Z7-fUU"/>
+                            <constraint firstItem="QBw-yk-rBa" firstAttribute="top" secondItem="Vug-Wd-hCC" secondAttribute="bottom" constant="8" id="b2Z-zk-IwR"/>
+                            <constraint firstAttribute="trailing" secondItem="kaI-KN-p7O" secondAttribute="trailing" id="bBO-V6-Ggt"/>
+                            <constraint firstItem="Vug-Wd-hCC" firstAttribute="leading" secondItem="KMX-7z-Wjz" secondAttribute="leading" constant="4" id="dmo-gp-5VF"/>
+                            <constraint firstItem="QBw-yk-rBa" firstAttribute="leading" secondItem="KMX-7z-Wjz" secondAttribute="leading" constant="8" id="exU-8i-HCe"/>
+                            <constraint firstItem="kaI-KN-p7O" firstAttribute="top" secondItem="KMX-7z-Wjz" secondAttribute="top" id="fya-sL-nGn"/>
+                            <constraint firstItem="zRf-uI-azy" firstAttribute="centerY" secondItem="QBw-yk-rBa" secondAttribute="centerY" id="hCH-oe-P3T"/>
+                            <constraint firstItem="LF5-by-pyQ" firstAttribute="leading" secondItem="KMX-7z-Wjz" secondAttribute="leading" constant="8" id="imM-EM-SQf"/>
+                            <constraint firstAttribute="trailing" secondItem="VRL-fc-jOb" secondAttribute="trailing" constant="8" id="na6-hP-Lcf"/>
+                            <constraint firstItem="VRL-fc-jOb" firstAttribute="centerY" secondItem="LF5-by-pyQ" secondAttribute="centerY" id="owi-vj-zf3"/>
+                            <constraint firstItem="LF5-by-pyQ" firstAttribute="top" secondItem="QBw-yk-rBa" secondAttribute="bottom" constant="8" id="syy-YK-6cZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="KMX-7z-Wjz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="3nY-oT-APe"/>
+                <constraint firstAttribute="bottom" secondItem="KMX-7z-Wjz" secondAttribute="bottom" constant="8" id="gXL-F9-QfB"/>
+                <constraint firstItem="KMX-7z-Wjz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="oiJ-KU-S8P"/>
+                <constraint firstAttribute="trailing" secondItem="KMX-7z-Wjz" secondAttribute="trailing" constant="8" id="yz1-cr-tfH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="171" height="345"/>
+            <connections>
+                <outlet property="checkmark" destination="U7i-t1-Xta" id="tew-6S-Mp7"/>
+                <outlet property="coverImg" destination="kaI-KN-p7O" id="Z06-9e-NhY"/>
+                <outlet property="descriptionLbl" destination="N3i-wI-m29" id="fGY-6g-yOb"/>
+                <outlet property="nameLbl" destination="Vug-Wd-hCC" id="Q8f-xI-Psd"/>
+                <outlet property="pagesLbl" destination="VRL-fc-jOb" id="GfP-F6-uka"/>
+                <outlet property="shadowView" destination="KMX-7z-Wjz" id="OLZ-dp-Oby"/>
+                <outlet property="yearLbl" destination="zRf-uI-azy" id="yvn-Lp-H6b"/>
+            </connections>
+            <point key="canvasLocation" x="50.000000000000007" y="147.65625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="64" height="62"/>
+    </resources>
+</document>

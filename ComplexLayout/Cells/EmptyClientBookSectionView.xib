@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="EmptyClientBookSectionView" customModule="ComplexLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IW8-Jl-lyU">
+                    <rect key="frame" x="16" y="16" width="288" height="105"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't have any books right now!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6D-fP-wXb">
+                            <rect key="frame" x="0.0" y="42" width="288" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="z6D-fP-wXb" firstAttribute="centerY" secondItem="IW8-Jl-lyU" secondAttribute="centerY" id="hPb-lZ-itt"/>
+                        <constraint firstItem="z6D-fP-wXb" firstAttribute="leading" secondItem="IW8-Jl-lyU" secondAttribute="leading" id="peg-Bl-4Z0"/>
+                        <constraint firstItem="z6D-fP-wXb" firstAttribute="centerX" secondItem="IW8-Jl-lyU" secondAttribute="centerX" id="rV7-u9-kON"/>
+                        <constraint firstAttribute="trailing" secondItem="z6D-fP-wXb" secondAttribute="trailing" id="vKl-2o-w7F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="IW8-Jl-lyU" secondAttribute="trailing" constant="16" id="GBH-KA-NaN"/>
+                <constraint firstItem="IW8-Jl-lyU" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="16" id="VCU-TR-rjj"/>
+                <constraint firstItem="IW8-Jl-lyU" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="16" id="cY9-WY-LWj"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="IW8-Jl-lyU" secondAttribute="bottom" constant="16" id="fyr-6s-5Ju"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="contentView" destination="IW8-Jl-lyU" id="OiV-Pe-nHw"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="159.04017857142856"/>
+        </collectionReusableView>
+    </objects>
+</document>
